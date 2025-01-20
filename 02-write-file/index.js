@@ -19,7 +19,7 @@ stdin.on("data", (chunk) => {
   } else {
     output.write(chunk);
   }
-})
+});
 process.on("exit", (code) => {
   if (code === 0) {
     stdout.write("Thank you! Good luck!");
